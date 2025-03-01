@@ -10,6 +10,13 @@ class Partner:
     def __repr__(self):
         return f"Partner(name={self.name}, age={self.age}, gender={self.gender}, appearance={self.appearance}, personality={self.personality})"
 
+name = input("Enter name: ")
+gender = input("Enter gender: ")
+age = int(input("Enter age: "))
+appearance = input("Enter appearance: ")
+personality = input("Enter personality: ")
+
+partner = Partner(name, age, gender, appearance, personality)
 
 class Pet:
     def __init__(self, name, pet_type):
@@ -22,7 +29,7 @@ class Pet:
     def show_pet(self):
         print(f"You have a {self.pet_type} named {self.name}!")
 
+pet_name = input("Enter pet's name: ")
+pet_type = input("Enter pet's type: ")
 
-
-# if __name__ == "__main__":
-#     main()
+pet = Pet(pet_name, pet_type)
