@@ -22,7 +22,16 @@ class Pet:
     def show_pet(self):
         print(f"You have a {self.pet_type} named {self.name}!")
 
+#positive_responses = [“good”, “happy”, “awesome”, “great”, “excited”]
+#negative_responses = ["sad", "angry", "bad", "down", “terrible]
+
+questions = ["How are you doing?", "What is your name?", "Can you tell me more?"]
+             
+def main():
+    for question in questions:
+        print(question)
+        user_input = input()
+        response = analyze_input(user_input)
+        print(response)
 
 
-# if __name__ == "__main__":
-#     main()
