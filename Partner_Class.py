@@ -20,5 +20,9 @@ class Pet:
         return f"Pet(name={self.name}, pet_type={self.pet_type})"
 
     def show_pet(self):
-        """Displays pet information."""
         print(f"You have a {self.pet_type} named {self.name}!")
+
+
+
+if __name__ == "__main__":
+    main()
