@@ -1,5 +1,6 @@
 from Partner_Class import Partner
 from Pet_Class import Pet
+from Questions import questions, follow up
 
 def get_user_input(questions): 
     responses = []
