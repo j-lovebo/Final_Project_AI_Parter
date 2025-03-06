@@ -1,6 +1,8 @@
-response = str(input("How was your day?"))
 
-def analyze_response(userResponse):
+
+response1 = input("How was your day?")
+
+def analyze_day(userResponse):
     emotions = {
         "happy": ["good", "great", "awesome", "fantastic", "joyful", "amazing", "fun", "silly", "eventful"],
         "sad": ["bad", "terrible", "horrible", "depressed", "upset", "down", "lonely", "sad", "not"],
@@ -10,7 +12,7 @@ def analyze_response(userResponse):
 
     emotion_counts = {"happy": 0, "sad": 0, "angry": 0, "neutral": 0}       #initializing
 
-    words = response.lower().split()
+    words = response1.lower().split()
 
     for word in words:                                                     #counter
         for emotion, keywords in emotions.items():
@@ -36,8 +38,10 @@ def analyze_response(userResponse):
         print ("Oh, sorry! I didn't quite understand that.")
 
 
+
 def main():
-    analyze_response(response)
+    analyze_day(response1)
+
 
 if __name__ == "__main__":
     main()
