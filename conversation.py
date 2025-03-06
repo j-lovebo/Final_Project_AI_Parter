@@ -2,9 +2,9 @@ response = str(input("How was your day?"))
 
 def analyze_response(userResponse):
     emotions = {
-        "happy": ["good", "great", "awesome", "fantastic", "joyful", "amazing", "fun"],
-        "sad": ["bad", "terrible", "horrible", "depressed", "upset", "down", "lonely"],
-        "angry": ["mad", "furious", "annoyed", "frustrated", "irritated"],
+        "happy": ["good", "great", "awesome", "fantastic", "joyful", "amazing", "fun", "silly", "eventful"],
+        "sad": ["bad", "terrible", "horrible", "depressed", "upset", "down", "lonely", "sad", "not"],
+        "angry": ["mad", "furious", "annoyed", "frustrated", "irritated", "difficult", "hard"],
         "neutral": ["okay", "fine", "alright", "meh", "normal"]
     }
 
@@ -24,16 +24,17 @@ def analyze_response(userResponse):
             raise ValueError("I bet tomorrow will be more eventful!")
 
         if dominant_emotion == "happy":
-            return "I'm glad to hear that! What made your day so great?"
+            print ("I'm glad to hear that! What made your day so great?")
         elif dominant_emotion == "sad":
-            return "I'm sorry to hear that. Do you want to talk about it?"
+            print ("I'm sorry to hear that. Do you want to talk about it?")
         elif dominant_emotion == "angry":
-            return "That sounds frustrating. What happened?"
+            print ("That sounds frustrating. What happened?")
         elif dominant_emotion == "neutral":
-            return "Got it. Anything interesting happen today?"
+            print ("Got it. Anything interesting happen today?")
 
     except ValueError:                                                  #incase words used are not in the dict
-        return "Oh, sorry! I didn't quite understand that."
+        print ("Oh, sorry! I didn't quite understand that.")
+
 
 def main():
     analyze_response(response)
