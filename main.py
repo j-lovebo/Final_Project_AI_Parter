@@ -1,11 +1,11 @@
 from Partner_Class import Partner
 from Pet_Class import Pet
-from Questions import questions, follow up
+from Questions import questions, follow_up
 
 def get_user_input(questions): 
     responses = []
     for question in questions: 
-        response.append)input(question))
+        responses.append(input(question))
     return responses
 
 
@@ -30,7 +30,7 @@ def main():
     print(f"You have a new pet: {pet}")
 
 
-#make sure script runs
+
 if __name__ == "__main__":
     main()
 
