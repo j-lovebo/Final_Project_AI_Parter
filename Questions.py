@@ -1,6 +1,6 @@
 
 questions = [
-    "How are you doing?", 
+    "How was your day?",
     "What is your name?", 
     "Can you tell me more?", 
     "Is anything worrying you?"
