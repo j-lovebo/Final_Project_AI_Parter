@@ -10,4 +10,3 @@ class Partner:
         return f"Partner(name={self.name}, age={self.age}, gender={self.gender}, appearance={self.appearance}, personality={self.personality})"
 
 
-
