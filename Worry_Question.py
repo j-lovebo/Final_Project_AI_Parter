@@ -27,9 +27,9 @@ def ask_worry():
 
 
     if destress_response:  #responding to what the user does to destress
-        print(f"That's a good way to relax! Personally, I like to take long walks on the beach. It helps me clear my mind. It was awesome chatting with you I hope we can talk soon again.")
+        print(f"That's a good way to relax! Personally, I like to take long walks on the beach.")
     else:  #if the user does not respond
-        print("It's important to find something that helps you relax. Maybe try taking a walk or listening to music? It was awesome chatting with you I hope we can talk soon again.")
+        print("It's important to find something that helps you relax. Maybe try taking a walk or listening to music?")
 
 
 def main():

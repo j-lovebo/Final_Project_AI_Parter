@@ -1,6 +1,7 @@
 import random
 
 # List of questions to ask the user
+#Theo
 questions = [
     "Are you doing anything fun today?",
     "What is your favorite hobby?",
