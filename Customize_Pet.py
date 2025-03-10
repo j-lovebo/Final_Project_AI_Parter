@@ -6,7 +6,7 @@ def customize_pet():
     pet_name = input("What should we name the pet? ")
     pet_type = input("What kind of pet should we get? ")
     pet_color = input("What color should the pet be? ")
-    pet_personality = input("What personality should the pet have? ")
+    pet_personality = input("What personality trait should the pet have? ")
 
     # Create a Pet object with user input
     new_pet = Pet(pet_name, pet_type, pet_color, pet_personality)
