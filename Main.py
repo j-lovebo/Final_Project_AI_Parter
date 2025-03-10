@@ -5,6 +5,13 @@ from Customize_Partner import customize_partner
 from name_reponse import name_response
 from Random_Questions import ask_random_question
 
+def get_input(prompt):
+    response = input(prompt)  # Get user input
+    if response.lower().replace(" ", "") == "quit":  # Remove spaces and check for "quit"
+        print("Goodbye! Exiting the program.")
+        exit()  # Terminate the program
+    return response
+
 #theo
 def main():
 
