@@ -1,6 +1,6 @@
 def analyze_day(userResponse):
     emotions = {
-        "happy": ["good", "great", "awesome", "fantastic", "joyful", "amazing", "fun", "silly", "eventful", "wonderful"],
+        "happy": ["good", "great", "awesome", "fantastic", "joyful", "amazing", "fun", "silly", "eventful", "wonderful", "Nice"],
         "sad": ["bad", "terrible", "horrible", "depressed", "upset", "down", "lonely", "sad", "not", "awful", "hard"],
         "angry": ["mad", "furious", "annoyed", "frustrated", "irritated", "difficult", ],
         "neutral": ["okay", "fine", "alright", "meh", "normal", "ok"]
