@@ -2,11 +2,15 @@ from Analyze_Day import analyze_day
 from Worry_Question import ask_worry
 from Customize_Pet import customize_pet
 from Customize_Partner import customize_partner
+from name_reponse import name_response
 
 
 def main():
 
     customize_partner()  #Start by making the user's partner
+
+    user_name = input("What is your name? ")  # Collect the user's name
+    name_response(user_name)
 
     customize_pet()  #Then do the same but with the partner's pet
 
