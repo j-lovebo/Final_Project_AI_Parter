@@ -3,6 +3,7 @@ from Worry_Question import ask_worry
 from Customize_Pet import customize_pet
 from Customize_Partner import customize_partner
 from name_reponse import name_response
+from Random_Questions import ask_random_question
 
 #theo
 def main():
@@ -18,6 +19,9 @@ def main():
     analyze_day(response_day)
 
     ask_worry() #run get to know code, asking about what is worrying user
+
+    ask_random_question()   #asks the users random questions from a list and responds with answers
+    
 
 
 if __name__ == "__main__":  #make sure script runs
