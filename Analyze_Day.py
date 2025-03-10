@@ -1,4 +1,4 @@
-def analyze_day(userResponse):
+def analyze_day(userResponse):      #theo
     emotions = {
         "happy": ["good", "great", "awesome", "fantastic", "joyful", "amazing", "fun", "silly", "eventful", "wonderful", "Nice"],
         "sad": ["bad", "terrible", "horrible", "depressed", "upset", "down", "lonely", "sad", "not", "awful", "hard"],

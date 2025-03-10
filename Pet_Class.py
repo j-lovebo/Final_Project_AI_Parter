@@ -1,4 +1,4 @@
-class Pet:
+class Pet:          #jlove
     def __init__(self, name, pet_type, color, personality):
         self.name = name
         self.pet_type = pet_type

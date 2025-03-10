@@ -1,4 +1,4 @@
-class Partner:
+class Partner:              #jlove
     def __init__(self, name, age, gender, appearance, personality):
         self.name = name
         self.age = age

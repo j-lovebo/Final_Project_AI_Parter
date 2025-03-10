@@ -1,5 +1,7 @@
+#theo and jlove
+
 def ask_worry():
-    worry_response = input("Is anything specific worrying you? (yes/no) ").lower()
+    worry_response = input("Is anything specific worrying you lately? (yes/no) ").lower()
 
     if worry_response == "yes":  #talking to user if they have something worrying them
         print("I'm really sorry to hear that. It's okay to feel this way sometimes. Would you like to talk about it?")
@@ -25,9 +27,9 @@ def ask_worry():
 
 
     if destress_response:  #responding to what the user does to destress
-        print(f"That's a good way to relax! Personally, I like to take long walks on the beach. It helps me clear my mind.")
+        print(f"That's a good way to relax! Personally, I like to take long walks on the beach. It helps me clear my mind. It was awesome chatting with you I hope we can talk soon again.")
     else:  #if the user does not respond
-        print("It's important to find something that helps you relax. Maybe try taking a walk or listening to music?")
+        print("It's important to find something that helps you relax. Maybe try taking a walk or listening to music? It was awesome chatting with you I hope we can talk soon again.")
 
 
 def main():

@@ -1,4 +1,4 @@
-from Pet_Class import Pet  # Importing Pet class from pet_data.py
+from Pet_Class import Pet  # Importing Pet class from pet_data.py           #jlove
 
 def customize_pet():
     print("I'm thinking about getting a pet. Please help me customize them!")

@@ -1,4 +1,4 @@
-from Partner_Class import Partner  # Import the Partner class
+from Partner_Class import Partner  # Import the Partner class       #theo
 
 def customize_partner():
     print("Let's start by customizing your partner!")
