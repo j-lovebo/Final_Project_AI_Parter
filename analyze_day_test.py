@@ -13,7 +13,7 @@ class TestAnalyzeDay(unittest.TestCase):
 
     def test_angry_response(self):
         self.assertEqual(analyze_day("I am so annoyed and frustrated!"),
-                         "That sounds frustrating, try to take some deep breathes to calm yourself down :)")
+                         "That sounds frustrating, try to take some deep breaths to calm yourself down :)")
 
     def test_neutral_response(self):
         self.assertEqual(analyze_day("I'm okay, just a normal day."), "Nothing wrong with a chill day:)")
