@@ -6,35 +6,50 @@ def analyze_day(userResponse):
         "neutral": ["okay", "fine", "alright", "meh", "normal", "ok"]
     }
 
-    while True:  # try exception, keeps the code running until it's in the domain
+    while True:
         try:
-            emotion_counts = {emotion: 0 for emotion in emotions}  # Initialize
-            words = userResponse.lower().split()
+            emotion_counts = {emotion: 0 for emotion in emotions}  # Initialize counts
+            words = userResponse.lower().split()  # Split response into words
 
+            # Count occurrences of each emotion
             for word in words:
                 for emotion, keywords in emotions.items():
                     if word in keywords:
                         emotion_counts[emotion] += 1
 
-            dominant_emotion = max(emotion_counts, key=emotion_counts.get)
+            max_count = max(emotion_counts.values())
+            dominant_emotions = [emotion for emotion, count in emotion_counts.items() if count == max_count]
 
-            if emotion_counts[dominant_emotion] == 0:
-                raise ValueError("Oh, sorry! I didn't quite understand that. Can you try again?")
+            if max_count == 0:
+                raise ValueError(
+                    "Oh, sorry! I didn't quite understand that. Can you try again?")  # runs code again if response wasnt in domain
 
-            if dominant_emotion == "happy":     # Respond based on the dominant emotion
-                print("I'm glad to hear that! You deserve a good day everyday!")
-            elif dominant_emotion == "sad":
-                print("I'm sorry to hear that, the days not over to cheer up!")
-            elif dominant_emotion == "angry":
-                print("That sounds frustrating, time to chillax.")
-            elif dominant_emotion == "neutral":
-                print("Sounds like a chill day:)")
+            if len(dominant_emotions) > 1:  # for ties
+                response = "It seems like your day was "
+                for i, emotion in enumerate(dominant_emotions):
+                    if i == len(dominant_emotions) - 1 and len(dominant_emotions) > 1:
+                        response += "and " + emotion + "."
+                    else:
+                        response += emotion + ", "
+                response += " Hopefully it will get better!"
+                print(response)
+                break  # Exit loop and ask for clarification
 
-            break  #finishes loop when properly responded
+            else:
+                dominant_emotion = dominant_emotions[0]
+                if dominant_emotion == "happy":
+                    print("I'm glad to hear that! You deserve a good day everyday!")
+                elif dominant_emotion == "sad":
+                    print("I'm sorry to hear that, the day's not over to cheer up!")
+                elif dominant_emotion == "angry":
+                    print("That sounds frustrating, time to chillax.")
+                elif dominant_emotion == "neutral":
+                    print("Sounds like a chill day:)")
+                break  # Exit loop after responding
 
         except ValueError as e:
-            print(e)  # Print the error message
-            userResponse = input("How was your day? ")  # runs again if error happens
+            print(e)
+            userResponse = input("How was your day? ")  # Re-prompt if no emotions are detected
 
 
 def main():
