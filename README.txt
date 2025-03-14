@@ -1,5 +1,8 @@
 Project Title: Partner AI       #theo
 
+For the single fellows out there (shout out to EE and CS majors) who are looking for extra attention or a
+lending comforting ear
+
 Description:
 Code acts as a conversational partner and pet. The user gets to customize a partner and pet to
 talk to and then interacts with the program by responding to questions and the program responds
